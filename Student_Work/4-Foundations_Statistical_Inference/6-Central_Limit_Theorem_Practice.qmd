@@ -15,7 +15,10 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = TRU
 
 Answer the following questions, render the document and submit the `.html` report.
 
-# Questions
+Describe the difference between the Law of Large Numbers and the Central Limit Theorem.  
+__Answer__:  
+
+# Scenario 1
 
 Suppose you take a sample of size $n=5$ from a right skewed distribution with a population mean, $\mu=125$ and a standard deviation, $\sigma=12$
 
@@ -29,6 +32,8 @@ __Question__:  What is the *shape* of the distribution of sample means and why?
 __Answer__:  
 
 
+# Scenario 2
+
 Now suppose you increase the sample size to $n=100$.  What is:
 
 __Mean of sample means__:  
@@ -36,5 +41,52 @@ __Standard deviation of sample means__:
 __Shape of the distribution of sample means__:  
 
 
-Describe the difference between the Law of Large Numbers and the Central Limit Theorem.  
+# Scenario 3
+
+Suppose you are a roller coaster designer. Each pod on the coaster carries 4 people. The weights of the people who ride the ride is right skewed, with a population mean weight of $\mu=195$ pounds and a population standard deviation $\sigma=25$. 
+
+__Question__: If the mean passenger weight of every roller coaster pod was calculated, what would the mean of the roller coaster pods average weights be ($\mu_{\bar{x}}$)?  
 __Answer__:  
+
+__Question__: What is the standard deviation of roller coaster pod average weights ($\sigma_{\bar{x}}$)?  
+__Answer__:  
+
+__Question__:  What is the *shape* of the distribution of roller coast pod average passenger weights? Why?
+__Answer__:  
+
+
+# Scenario 4
+
+A particular casino caters to tourists. Tourists arrive on buses in groups of 60. You work for the tour company's marketing department. Since the winnings of individual tourists are so right skewed, you would like to advertise the mean winnings per __busload__ of tourists on your brochure.  The population mean winnings for individual tourists is $\mu= \$500$ and the population standard deviation is $\sigma= \$1,200$. 
+
+__Question__: On average, what are mean winnings of a busload of tourists ($\mu_{\bar{x}}$)? 
+__Answer__:  
+
+__Question__: What is the standard deviation of average winnings for a busload of tourists (i.e. $\sigma_{\bar{x}}$)?  
+__Answer__:  
+
+__Question__:  What is the *shape* of the distribution of average winnings for busloads of tourists? Why?
+__Answer__:  
+
+__Question__: Which of these statements is correct:
+a. 68% of tour buses will have passengers that average winnings between \$345 and \$655.
+b. 68% of tour buses will have passengers that average winnings between \$-700 and \$1700.
+
+__Question__: Is your marketing decision to advertise the average winnings of a busload of tourists (as opposed to individual winnings) a good idea? Why or why not?
+
+
+# Scenario 5
+
+Is this data normally distributed? (Use a qqplot to decide)
+
+```{r}
+scenario_5 <- c(0.161, 0.485, 0.43, 0.842, 0.267, 0.044, 0.046, 0.277, 0.146, 0.664, 0.68, 0.367, 0.931, 0.384, 0.099, 0.15, 0.319, 0.553, 0.031, 1.09, 0.335, 0.971, 0.454, 0.136, 0.147, 1.335, 0.073, 0.324, 0.183, 0.273, 0.356, 0.181, 0.818, 1.885, 1.415, 0.063, 1.066, 1.121, 0.332, 0.295, 0.149, 0.588, 0.267, 0.272, 0.414, 0.527, 0.017, 0.717, 1.167, 0.28, 0.403, 0.571, 0.57, 0.854, 0.218, 0.462, 0.041, 0.018, 0.17, 0.195, 0.081, 2.138, 0.502, 0.526, 0.39, 0.301, 0.063, 0.114, 0.099, 0.313, 0.05, 0.264, 0.065, 0.01, 1.576, 0.348, 1.741, 1.772, 0.149, 0.572, 0.06, 0.3, 0.185, 1.453, 1.761, 0.557, 0.6, 1.935, 0.285, 0.107, 3.276, 0.099, 0.237, 0.413, 0.948, 0.216, 0.142, 0.476, 0.94, 0.038)
+```
+
+# Scenario 6
+
+Is this data normally distributed? (Use a qqplot to decide)
+
+```{r}
+scenario_6 <- c(-1.233, 0.758, -1.514, -1.905, -0.956, 0.027, -0.894, 1.274, 1.897, 0.6, 0.366, 0.601, -0.348, 1.857, 0.542, 1.213, 3.148, 0.395, 1.455, -0.554, -0.592, -1.466, 2.896, 0.716, -1.731, 1.759, 0.151, 2.152, -0.857, 0.159, 1.448, 0.911, -1.473, 0.441, 0.095, -2.326, -0.115, -0.754, -0.261, 0.94, 0.2, 1.24, -1.436, -0.622, -0.779, -0.928, 0.672, 0.553, -0.57, 0.106, -1.344, 0.932, -0.903, -0.602, 0.104, 0.942, 0.978, 0.429, 2.412, -1.239, -1.603, -0.181, -0.521, 1.914, -2.182, 0.125, 1.685, 0.003, -0.387, -2.581, -1.024, 0.334, -0.145, 0.94, 0.164, -0.064, -1.564, -0.711, 1.154, -0.131, -0.378, 1.853, -0.029, -0.734, -0.282, 0.984, 1.165, 1.86, -0.993, 0.799, 0.154, 1.172, -0.298, 0.225, 0.089, -1.197, -0.36, 0.271, -2.952, -0.236)
+```

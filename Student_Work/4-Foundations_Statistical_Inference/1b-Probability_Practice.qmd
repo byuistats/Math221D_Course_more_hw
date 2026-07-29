@@ -1,0 +1,39 @@
+---
+title: "Homework: Foundations of Probability"
+author: "Statistics Student"
+format: html
+---
+
+## Introduction to Probability Homework
+
+Please answer the following 10 questions using the concepts of discrete and continuous probability distributions. Show your work for any calculations.
+
+### Part 1: Fundamentals and Discrete Events
+
+**Question 1: The Range of Probability**
+What is the quantifiable range of values that a probability can take? Briefly explain what the two extreme values (the endpoints of the range) represent regarding the likelihood of an event. 
+
+**Question 2: Defining Discrete Events**
+Define what a "discrete event" is. Provide two original examples of discrete events that were not used in the reading (e.g., do not use flipping a coin, rolling a die, or counting students). 
+
+**Question 3: Calculating Probabilities**
+You are playing your favorite board game. It is close to the end and is your turn. If you roll a 5 or 6 on a 6-sided die you will win the game. If you roll anything else, your oponent will win. What is the probability you win the game on your next roll?
+
+**Question 4: Soda Preferences and the Complement Rule**
+A survey of 288 students found the following preferences for sparkling drinks:
+* 144 prefer Twisted Sugar
+* 58 prefer Fizz Rizz
+* 68 prefer Pick Me Up
+The remaining students are classified as having a "distaste" for these beverages. Calculate the probability of randomly selecting a student who prefers Fizz Rizz. 
+
+### Part 2: Continuous Probability Distributions
+
+**Question 5: The Probability of an Exact Point**
+In a continuous probability distribution, why is the probability of a specific, exact event (such as a person being exactly 72.1254 inches tall) considered to be zero?
+
+**Question 6: Major League Baseball Probabilities**
+You work at a doctor's office where data about patients eosinophil count per microliter of blood is collected. There are 133 patients with an eosinohil count over 1,500, out of a total of 446 patients. Calculate the probability of randomly selecting a patient whose eosinophil count exceeds 1,500. 
+
+**Question 7: Total Probability Rule**
+What is the fundamental rule regarding the total area under the curve for any continuous probability distribution? 
+

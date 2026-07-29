@@ -1,0 +1,57 @@
+---
+title: "Confidence Interval for a Single Mean (when sigma is known)"
+subtitle: Practice Problems
+format:
+  html:
+    self-contained: true
+    embed-resources: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = TRUE)
+```
+
+# Question 1
+
+Which of the following serves as the point estimator for the unknown population mean $\mu$?
+
+a)  $\sigma$
+b)  $s$
+c)  $\bar{x}$
+d)  $n$
+
+# Question 2
+
+A researcher wants to estimate the mean birth weight of neonates in a specific region. The population standard deviation is known to be $\sigma = 0.5$ kg. A random sample of $n = 100$ babies yields a sample mean of $\bar{x} = 3.1$ kg. Calculate the Margin of Error ($m$) for a 95% confidence interval.
+
+# Question 3
+
+Using the information from previous question, calculate the lower and upper bounds of the 95% confidence interval. Format your answer as: (Lower Limit, Upper Limit).
+
+# Question 4
+
+If sample size $n$ increases, what happens to the width of the confidence interval? (keeping the confidence level the same)
+
+# Question 5
+
+Suppose you calculate a 90% confidence interval for the average height of a plant species to be (12.4cm, 15.6cm). Write a full sentence to interpret this confidence interval.
+
+# Question 6
+
+What is the margin of error for the confidence interval given in the previous question?
+
+# Question 7
+
+An environmentalist is testing the algae levels in a large lake in her region. It is known that $\sigma = 15000$ algae cells/mL. A sample of $n = 36$ sites are tested, resulting in a sample mean of $\bar{x} = 45000$ algae cells/mL. Calculate a 99% confidence interval for the true mean algae levels (in cells/mL).
+
+# Question 8
+
+What is the critical value $z^*$ for a 90% confidence interval? What does $z^*$ represent?
+
+# Question 9
+
+Consider the margin of error formula:
+
+$$m = z^* \cdot \frac{\sigma}{\sqrt{n}}$$
+
+You are planning a study of the average grocery bill (per week) of a BYU-Idaho student. You want to be 95% confident that your sample estimate ($\bar{x}$) is within $m = \$5$ of the true mean. I know from previous studies that $\sigma = \$15$. How many students do I need to sample?
