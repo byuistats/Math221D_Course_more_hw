@@ -1,6 +1,10 @@
 ---
-title: "One-Sample T-test"
-subtitle: "One-Sample T-test and Confidence Intervals"
+title: One-Sample T-test
+subtitle: One-Sample T-test and Confidence Intervals
+format:
+  html:
+    self-contained: true
+    embed-resources: true
 ---
 
 # Lesson Objectives

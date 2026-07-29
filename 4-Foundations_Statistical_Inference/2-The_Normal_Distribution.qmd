@@ -1,5 +1,9 @@
 ---
-title: "The Normal Distribution"
+title: The Normal Distribution
+format:
+  html:
+    self-contained: true
+    embed-resources: true
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = TRUE)

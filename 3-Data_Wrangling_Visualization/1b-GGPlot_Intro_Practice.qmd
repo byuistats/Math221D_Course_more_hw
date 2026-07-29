@@ -1,0 +1,108 @@
+---
+title: 'ggplot2: Descriptive Statistics Practice'
+format:
+  html:
+    self-contained: true
+    embed-resources: true
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = TRUE)
+```
+
+
+
+# Introduction
+
+In this activity, you will practice the plots from the previous Application Activity, but this time creating each plot using ggplot instead of the method you originally learned. 
+  
+We will be using data collected about students in 2 Portuguese schools including their final grade. The goal of the research was to see what variables impact final grades.  
+
+## Load the Libraries and Data
+
+```{r, echo=FALSE, include=FALSE}
+
+## Don't worry about this line of code. It is included for purposes of rendering the document
+
+library(rio)
+library(tidyverse)
+library(mosaic)
+library(car)
+
+student <- read_csv('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/student_data_kaggle.csv')
+
+```
+
+# Review the data
+
+Take some time to familiarize yourself with the data.  Check the [website](https://www.kaggle.com/datasets/whenamancodes/student-performance) familiarize yourself with the study.  See what the columns are.  
+
+
+## Univariate Plot: Quantitative Response Variable
+
+Create a histogram of column `G3`, which contains their final grade. 
+
+```{r}
+
+
+
+```
+
+
+## Bivariate Plot: Quantitative Response and Categorical Explanatory Variable
+
+Create a side-by-side boxplot of final grades (`G3`) for each level of father's job (`Fjob`). Ensure the plot is properly labeled, titled, and looks nice. Use non-cryptic titles and labels (i.e. 'Final grade' instead of 'G3'). 
+
+```{r}
+
+
+```
+
+
+Similarly, create a side-by-side boxplot of final grades for each level of mother's job (`Mjob`). Give each box a different color. Can you add any other embellishments?
+
+```{r}
+
+
+```
+
+
+
+## Bivariate Plot: Quantitative Response and Quantitative Explanatory Variable
+
+Create a scatter plot looking at the relationship between mid-term grade (G2) and final grade (G3). Use non-cryptic titles and labels. 
+
+```{r}
+
+
+```
+
+
+
+## Univariate Plot: Categorical Response
+
+
+
+Create a *SORTED* bar chart of the counts of reasons students chose their school (`reason`). Use non-cryptic titles and labels. Make sure the plot looks nice.
+
+```{r}
+
+
+
+```
+
+
+
+## Bivariate Plot: Categorical Response and Categorical Explanatory Variable
+
+Create a bar chart that groups bars based on `sex` on the x-axis and adds a legend for the colors of the bars by `romantic`. Ensure the plot looks nice, with good labels and a title stating the main take away of the plot.
+
+```{r}
+ 
+
+```
+
+
+
+
+
+

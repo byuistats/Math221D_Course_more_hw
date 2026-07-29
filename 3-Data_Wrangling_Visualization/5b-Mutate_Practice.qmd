@@ -1,0 +1,121 @@
+---
+title: Level up your Tidy-ness
+format:
+  html:
+    self-contained: true
+    embed-resources: true
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = TRUE)
+```
+
+
+# Putting it All Together
+
+The questions relate to the High School survey used in other examples.  
+
+```{r}
+# Load libraries and data
+
+library(rio)
+library(mosaic)
+library(tidyverse)
+library(car)
+
+survey <- import('https://github.com/byuistats/Math221D_Cannon/raw/master/Data/HighSchoolSeniors_subset.csv') %>% tibble()
+
+```
+
+
+# Telepaths, Gender and Sleep
+
+Suppose we want to see who gets more sleep on non-school nights, males or females whose chosen superpower would be telepathy.  Also, create a column that is the ratio of sleep hours on non-school nights to 8.  This calculates the percent of recommended sleep on non-school nights.    
+
+1. Create a dataset that includes columns Gender, Superpower, Sleep_Hours_Non-Schoolnight, and a new, calculated column that contains a ratio: non-schoolnight sleep hours divided by 8. Only include people who choose Telepathy as their superpower.
+
+```{r}
+# Your Code:
+
+```
+
+
+2. Using the dataset created in the previous question, comparing males and females on:
+  
+    a. Mean, standard deviation, and sample size of Sleep Hours on non-school nights 
+    b. Mean, standard deviation, and sample size of the percent of recommended sleep
+
+
+
+```{r}
+# a
+
+
+# b
+
+```
+
+3. Discuss your findings:
+
+
+
+# Texts
+
+4. Our goal is to find whether people tend to send or receive more texts on average. Create a new column in the dataset that will allow us to investigate that.
+
+
+```{r}
+# Your Code:
+survey |> 
+```
+
+
+5. Calculate the mean, standard deviation and 5 number summary of the variable you created in the previous problem. Interpret/discuss your answer to the question do people tend to send or receive more texts on average? Be sure to speculate on why you think that might be the case.
+
+
+```{r}
+# Your Code:
+
+```
+
+
+6. Create a variable in the dataset that tries to capture how many hours per week a student spends on screens per week.
+      a. Create a new column called `screen_hours` that is equal to the sum of video game hours, social website hours, text messaging hours, computer use hours, and watching TV hours. 
+      b. Create a new column that divides `screen_hours` by the total hours available in a week to get the % of the student's life each week that is spent on screens.
+      c. Create another new column that divides `social_website_hours` by `screen_hours` to understand what percent of the total screen hours are spent on social websites.
+
+
+```{r}
+# Your Code:
+
+```
+
+
+7. Now calculate the mean, median, and standard deviation of the 3 new columns you created. Discuss your findings and conclusions about each.
+      a. `screen_hours` discussion:
+      b. % of student's life on screens discussion:
+      c. % of total screen hours spent on social websites discussion: 
+
+```{r}
+# Your Code:
+
+```
+
+
+8. What arguments could be made for why `screen_hours` may not be a good metric for total time students spend on the screens per week?
+      
+
+## Putting it altogether
+
+9. Let's practice using a factor variable in addition to the other wrangling skills you have learned so far.
+
+We are interested in comparing hours spent in outdoor activities for students by their favorite seasons. 
+
+    - Start by removing outliers in the `Outdoor_Activities_Hours` variable. 
+    - Then create side-by-side boxplots `Outdoor_Activities_Hours` by `Favorite_Season`, but we want the seasons listed in a specific order: Winter, Spring, Summer, Fall. 
+        
+        - To do this, create a new variable (or overwrite the Favorite_Season variable) that converts the `Favorite_Season` character variable into a factor variable with the specified order for its levels. Then create the boxplot.
+        
+```{r}
+# Your Code:
+
+```

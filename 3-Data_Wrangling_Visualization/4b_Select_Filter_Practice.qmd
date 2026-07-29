@@ -1,0 +1,99 @@
+---
+title: Level up your Tidy-ness
+format:
+  html:
+    self-contained: true
+    embed-resources: true
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = TRUE)
+```
+
+
+# Practicing Filter and Select statements
+
+The questions relate to the High School survey used in other examples.  
+
+```{r}
+# Load libraries and data
+
+library(rio)
+library(mosaic)
+library(tidyverse)
+library(car)
+
+survey <- import('https://github.com/byuistats/Math221D_Cannon/raw/master/Data/HighSchoolSeniors_subset.csv') %>% tibble()
+
+```
+
+
+# Telepaths, Gender and Sleep
+
+Suppose we want to see who gets more sleep on non-school nights, males or females whose chosen superpower would be telepathy.  Also, create a column that is the ratio of sleep hours on non-school nights to 8.  This calculates the percent of recommended sleep on non-school nights.    
+
+1. Create a dataset that includes columns Gender, Superpower, Sleep_Hours_Non-Schoolnight. Then filter the dataset to include only those who choose Telepathy as their superpower.
+
+```{r}
+survey |> 
+
+```
+
+
+2. How many rows and columns does the resulting dataset have?
+
+
+# Vegetarians and Height
+
+3. How many vegetarians say meat is their favorite food?
+
+**HINT**: This can be done with a single filter statement
+
+```{r}
+# Your Code:
+
+```
+
+4. Start with the full dataset then filter out any major outliers in heights.
+
+```{r}
+# Your Code:
+
+```
+
+5. Explain how you decided where the cut-off for too tall and too short should be. What were the thresholds you chose? How many rows were in the resulting dataset?
+
+6. Use ggplot to create a side-by-side boxplot of heights for vegetarians vs. non-vegetarians.
+
+```{r}
+# Your Code:
+
+```
+
+7. From the boxplot, would you argue one group tends to be taller/shorter than the other? Justify your answer.
+
+
+8. Create a dataset that:
+      a. Includes only columns for Favourite_physical_activity and Reaction_time
+  
+      c. Includes only students whose favorite physical activity is Walking/Hiking, Basketball, Swimming, Soccer
+  
+      d. Filters Reaction Times to be less than 1 second
+
+```{r}
+# Your Code:
+
+```
+
+
+9. Now use the dataset created in the previous question to create a side-by-side boxplot for the reaction times comparing favourite physical activity
+
+```{r}
+# Your Code:
+
+
+```
+
+
+10. Which physical activity group has the quickest reaction time?
+
+

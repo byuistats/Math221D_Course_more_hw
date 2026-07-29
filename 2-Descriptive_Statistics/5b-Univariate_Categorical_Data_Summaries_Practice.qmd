@@ -1,0 +1,60 @@
+---
+title: 'Practice: Summarizing Categorical Data for 1 Variable'
+format:
+  html:
+    self-contained: true
+    embed-resources: true
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = TRUE)
+```
+
+# Introduction
+
+Reasons why patients visit a chiropractor vary and may depend on where you live.  
+
+Use the chiropractic dataset to practice summarizing categorical data.  
+
+## Load the Libraries and Data
+
+```{r}
+
+library(tidyverse)
+library(mosaic)
+library(rio)
+library(car)
+
+chiropractic <- import('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/chiropractic_data.csv')
+
+```
+
+
+# Why Visit?  
+
+__QUESTION__:  List all the levels for `motivation` in the data:  
+```{r}
+unique()
+```
+
+
+Create a table of counts (i.e. frequencies) for motivations to see see a chiropractor:  
+
+```{r}
+
+
+```
+
+__QUESTION__:  What is the most common motivation for visiting a chiropractor? How many times was it selected in the sample?  
+__ANSWER__: 
+
+
+Create a sorted bar plot of the frequencies for motivations to see see a chiropractor:  
+
+```{r}
+
+
+```
+
+
+
+

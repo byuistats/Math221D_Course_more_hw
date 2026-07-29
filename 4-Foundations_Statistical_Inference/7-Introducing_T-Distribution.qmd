@@ -1,5 +1,9 @@
 ---
-title: "Introducing the T-Distribution"
+title: Introducing the T-Distribution
+format:
+  html:
+    self-contained: true
+    embed-resources: true
 ---
 
 ## The Problem: We Don't Know $\sigma$

@@ -1,7 +1,10 @@
 ---
-title: "Homework: Foundations of Probability"
-author: "Statistics Student"
-format: html
+title: 'Homework: Foundations of Probability'
+author: Statistics Student
+format:
+  html:
+    self-contained: true
+    embed-resources: true
 ---
 
 ## Introduction to Probability Homework
