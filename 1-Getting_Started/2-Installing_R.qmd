@@ -15,12 +15,12 @@ R and RStudio are not the same thing.  R is like the engine in a car, and RStudi
 
 To install R and RStudio on your computer, please follow these instructions:  
 
-  1. Go to the [R-Studio](https://posit.co/download/rstudio-desktop/) page and follow the instructions:  
+  1. Go to the [R-Studio](https://cran.r-project.org/) page and follow the instructions:  
     a. Install R.  The "Download and Install R" button will take you to the R website.  You will have to click through a few links to get to the download.  
       * For PC:  "Download R for Windows" > "Install R for the first time" > Whatever the latest version is will be at the top.  
       * For Mac:  "Download R for Mac" > There will be 2 options on the left with the latest version of R (R-4.4.3, for example).  Which version you download depends on what kind of processor chip you have, but most will work with the version ending in "arm64.pkg"
 
-  2. Return to the [R-studio](https://posit.co/download/rstudio-desktop/) download page and click the "Download RStudio Desktop" button.  Run the downloaded program and accept the defaults.  
+  2. Return to the [R-studio](https://docs.posit.co/ide/user/#rstudio-ide-oss-downloads) download page and click the "Download RStudio Desktop" button.  Run the downloaded program and accept the defaults.  
 
 
 Once the RStudio installer downloads, open the resulting file.

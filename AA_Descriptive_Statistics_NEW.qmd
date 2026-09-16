@@ -1,0 +1,261 @@
+---
+title: 'Application Activity:  Descriptive Statistics'
+format:
+  html:
+    self-contained: true
+    embed-resources: true
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = TRUE)
+```
+
+
+
+# Introduction
+
+In this activity, you will practice everything we've covered up to this point including:
+
+* Reviewing a dataset  
+* Determining response and explanatory variables  
+* Determining data types (quantitative, categorical)  
+* Creating descriptive statistics:  
+  + Quantitative data (one and two variables)
+    + Summary statistics for a single variable (`favstats(data$y)`)
+    + Histogram for one variable (`histogram(data$y)`)  
+    + Summary statistics for multiple groups (`favstats(data$y ~ data$x)`)  
+    + Side-by-side boxplots (`boxplot(data$y ~ data$x)`)  
+    + Scatter plots, continuous $x$ (`plot(data$y ~ data$x)`)  
+    + Correlation between 2 quantitative variables (correlation coefficient, $r$)  
+  + Categorical data (one and two variables)  
+    + Identifying levels of a categorical variable (`unique()`)  
+    + Frequency and proportion tables (`table(data$variable)`, `prop.table(table(data$variable))`)  
+    + Univariate, SORTED bar plots (`barplot(SORTED_table_name)`)  
+    + Contingency tables (`table(row, column)`)  
+    + Row/Column Percents (`prop.table(tbl_name, margin = )`)  
+    + Bivariate bar plots (`barplot(table_name, beside=TRUE, col=c(2,3,4,...))`)  
+    
+  
+
+
+## Load the Libraries and Data
+
+```{r, echo=FALSE, include=FALSE}
+
+## Don't worry about this line of code. It is included for purposes of rendering the document
+
+library(rio)
+library(tidyverse)
+library(mosaic)
+library(car)
+
+student <- read_csv('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/student_data_kaggle.csv')
+
+```
+
+# Review the data
+
+We will be using data collected about students in 2 Portuguese schools including their final grade. The goal of the research was to see what variables impact final grades. 
+
+Take some time to check the [website](https://www.kaggle.com/datasets/whenamancodes/student-performance) in order to familiarize yourself with the study and understand what the variables represent.  See what the columns are.  
+
+
+# Response and Explanatory Variable
+
+__QUESTION 1__:  What is the primary response variable?  (What are we trying to predict?)  
+__ANSWER 1__:  
+
+__QUESTION 2__: List 5 potential explanatory variables and whether or not they are *quantitative* or *categorical*:  
+__ANSWER 2__:  
+
+  1.  
+
+  2.  
+ 
+  3.  
+
+  4.  
+
+  5.  
+
+# Univariate Statistics
+
+__QUESTION 3__:  Create a table of summary statistics for `G3`, the final grades:  
+__ANSWER 3__:
+
+```{r}
+
+favstats()
+
+```
+
+__QUESTION 4__:  What is the mean grade?  
+__ANSWER 4__:  
+
+__QUESTION 5__:  What is the median grade?  
+__ANSWER 5__:  
+
+__QUESTION 6__:  What is the Standard Deviation of grades?  
+__ANSWER 6__:  
+
+__QUESTION 7__:  Describe what the above standard deviation means in context.  
+__ANSWER 7__:  
+
+__QUESTION 8__:  What is the 75th percentile of grades?  
+__ANSWER 8__:  
+
+__QUESTION 9__:  Interpret in words what the 75th percentile means?  
+__ANSWER 9__:  
+
+
+__QUESTION 10__: Create a histogram of student absences:  
+__ANSWER 10__:  
+
+```{r}
+
+```
+
+__QUESTION 11__:  What is the basic shape of the distribution?  
+__ANSWER 11__:  
+
+__QUESTION 12__: Who is your favorite stats teacher? :)
+__ANSWER 12__: 
+
+
+# Relationship Between 2 Variables
+
+## Categorical X
+
+__QUESTION 13__:  Create a table of summary statistics for final grade for each level of `sex`:  
+__ANSWER 13__:  
+
+```{r}
+
+favstats(~)
+
+```
+
+__QUESTION 14__:  What is the mean grade for females?  
+__ANSWER 14__:  
+
+__QUESTION 15__:  Create a side-by-side boxplot of final grades for each level of father's job (`Fjob`):
+__ANSWER 15__:
+
+```{r}
+
+
+```
+
+__QUESTION 16__:  Which level of Fjob tends to have students with the highest final grades?  
+__ANSWER 16__:  
+
+
+__QUESTION 17__: Create a side-by-side boxplot of final grades for each level of mother's job (`Mjob`):
+__ANSWER 17__:
+
+```{r}
+
+
+```
+
+__QUESTION 18__:  Which level of Mjob appears to have students with the highest final grades?  
+__ANSWER 18__:  
+
+
+
+## Quantitative X
+
+__QUESTION 19__: Create a scatter plot looking at the relationship between mid-term grade (G2) and final grade (G3):
+__ANSWER 19__:  
+
+```{r}
+
+
+```
+
+__QUESTION 20__:  Does the relationship appear roughly linear?  
+__ANSWER 20__:  
+
+__QUESTION 21__:  What anomalies, if any, do you notice?  
+__ANSWER 21__:  
+
+__QUESTION 22__:  Based on the scatter plot, guess the correlation coefficient:    
+__ANSWER 22__:  
+
+__QUESTION 23__: Calculate the correlation coefficient, r: 
+__ANSWER 23__:
+
+```{r}
+
+```
+
+
+## Categorical Descriptive Statistics
+
+
+__QUESTION 24__:  What are the levels of mother's profession? 
+__ANSWER 24__:  
+
+```{r}
+
+unique()
+
+```
+
+
+__QUESTION 25__: Create a proportion table for `sex`
+__ANSWER 25__:
+
+```{r}
+
+```
+
+__QUESTION 26__:  What proportion of respondents are female?  
+__ANSWER 26__:  
+
+
+__QUESTION 27__: Create a *SORTED* bar plot of the counts of reasons students chose their school (`reason`):  
+__ANSWER 27__:
+
+```{r}
+
+
+```
+
+__QUESTION 28__:  Which reason appears to be the most popular?  
+__ANSWER 28__:  
+
+
+__QUESTION 29__: Calculate the proportion of each gender in a romantic relationship (should sum to 1 for each gender):  
+__ANSWER 29__:
+
+```{r}
+
+
+```
+
+
+__QUESTION 30__:  What percent of female respondents are in a romantic relationship?  
+__ANSWER 30__:  
+
+
+__QUESTION 31__:  What percent of male respondents are in a romantic relationship?  
+__ANSWER 31__:  
+
+
+__QUESTION 32__: Create a bar plot *of counts (not proportions)* that groups bars based on `sex` on the x-axis and adds a legend for the colors of the bars by `romantic`.
+__ANSWER 32__:
+
+```{r}
+
+# Start by naming the table
+tbl_relationship <- table()
+
+# Then create the chart:  
+
+```
+
+
+
+
+
+

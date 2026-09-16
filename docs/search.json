@@ -1754,7 +1754,7 @@
     "href": "4-Foundations_Statistical_Inference/6-Central_Limit_Theorem_Practice.html",
     "title": "CLT Practice",
     "section": "",
-    "text": "Instructions\nAnswer the following questions, render the document and submit the .html report.\n\n\nQuestions\nSuppose you take a sample of size \\(n=5\\) from a right skewed distribution with a population mean, \\(\\mu=125\\) and a standard deviation, \\(\\sigma=12\\)\nQuestion: What is the mean of the distribution of sample means (\\(\\mu_{\\bar{x}}\\))?\nAnswer:\nQuestion: What is the standard deviation of sample means (\\(\\sigma_{\\bar{x}}\\))?\nAnswer:\nQuestion: What is the shape of the distribution of sample means and why?\nAnswer:\nNow suppose you increase the sample size to \\(n=100\\). What is:\nMean of sample means:\nStandard deviation of sample means:\nShape of the distribution of sample means:\nDescribe the difference between the Law of Large Numbers and the Central Limit Theorem.\nAnswer:"
+    "text": "Instructions\nAnswer the following questions, render the document and submit the .html report.\nDescribe the difference between the Law of Large Numbers and the Central Limit Theorem.\nAnswer:\n\n\nScenario 1\nSuppose you take a sample of size \\(n=5\\) from a right skewed distribution with a population mean, \\(\\mu=125\\) and a standard deviation, \\(\\sigma=12\\)\nQuestion: What is the mean of the distribution of sample means (\\(\\mu_{\\bar{x}}\\))?\nAnswer:\nQuestion: What is the standard deviation of sample means (\\(\\sigma_{\\bar{x}}\\))?\nAnswer:\nQuestion: What is the shape of the distribution of sample means and why?\nAnswer:\n\n\nScenario 2\nNow suppose you increase the sample size to \\(n=100\\). What is:\nMean of sample means:\nStandard deviation of sample means:\nShape of the distribution of sample means:\n\n\nScenario 3\nSuppose you are a roller coaster designer. Each pod on the coaster carries 4 people. The weights of the people who ride the ride is right skewed, with a population mean weight of \\(\\mu=195\\) pounds and a population standard deviation \\(\\sigma=25\\).\nQuestion: If the mean passenger weight of every roller coaster pod was calculated, what would the mean of the roller coaster pods average weights be (\\(\\mu_{\\bar{x}}\\))?\nAnswer:\nQuestion: What is the standard deviation of roller coaster pod average weights (\\(\\sigma_{\\bar{x}}\\))?\nAnswer:\nQuestion: What is the shape of the distribution of roller coast pod average passenger weights? Why? Answer:\n\n\nScenario 4\nA particular casino caters to tourists. Tourists arrive on buses in groups of 60. You work for the tour company’s marketing department. Since the winnings of individual tourists are so right skewed, you would like to advertise the mean winnings per busload of tourists on your brochure. The population mean winnings for individual tourists is \\(\\mu= \\$500\\) and the population standard deviation is \\(\\sigma= \\$1,200\\).\nQuestion: On average, what are mean winnings of a busload of tourists (\\(\\mu_{\\bar{x}}\\))? Answer:\nQuestion: What is the standard deviation of average winnings for a busload of tourists (i.e. \\(\\sigma_{\\bar{x}}\\))?\nAnswer:\nQuestion: What is the shape of the distribution of average winnings for busloads of tourists? Why? Answer:\nQuestion: Which of these statements is correct: a. 68% of tour buses will have passengers that average winnings between $345 and $655. b. 68% of tour buses will have passengers that average winnings between $-700 and $1700.\nQuestion: Is your marketing decision to advertise the average winnings of a busload of tourists (as opposed to individual winnings) a good idea? Why or why not?\n\n\nScenario 5\nIs this data normally distributed? (Use a qqplot to decide)\n\nscenario_5 &lt;- c(0.161, 0.485, 0.43, 0.842, 0.267, 0.044, 0.046, 0.277, 0.146, 0.664, 0.68, 0.367, 0.931, 0.384, 0.099, 0.15, 0.319, 0.553, 0.031, 1.09, 0.335, 0.971, 0.454, 0.136, 0.147, 1.335, 0.073, 0.324, 0.183, 0.273, 0.356, 0.181, 0.818, 1.885, 1.415, 0.063, 1.066, 1.121, 0.332, 0.295, 0.149, 0.588, 0.267, 0.272, 0.414, 0.527, 0.017, 0.717, 1.167, 0.28, 0.403, 0.571, 0.57, 0.854, 0.218, 0.462, 0.041, 0.018, 0.17, 0.195, 0.081, 2.138, 0.502, 0.526, 0.39, 0.301, 0.063, 0.114, 0.099, 0.313, 0.05, 0.264, 0.065, 0.01, 1.576, 0.348, 1.741, 1.772, 0.149, 0.572, 0.06, 0.3, 0.185, 1.453, 1.761, 0.557, 0.6, 1.935, 0.285, 0.107, 3.276, 0.099, 0.237, 0.413, 0.948, 0.216, 0.142, 0.476, 0.94, 0.038)\n\n\n\nScenario 6\nIs this data normally distributed? (Use a qqplot to decide)\n\nscenario_6 &lt;- c(-1.233, 0.758, -1.514, -1.905, -0.956, 0.027, -0.894, 1.274, 1.897, 0.6, 0.366, 0.601, -0.348, 1.857, 0.542, 1.213, 3.148, 0.395, 1.455, -0.554, -0.592, -1.466, 2.896, 0.716, -1.731, 1.759, 0.151, 2.152, -0.857, 0.159, 1.448, 0.911, -1.473, 0.441, 0.095, -2.326, -0.115, -0.754, -0.261, 0.94, 0.2, 1.24, -1.436, -0.622, -0.779, -0.928, 0.672, 0.553, -0.57, 0.106, -1.344, 0.932, -0.903, -0.602, 0.104, 0.942, 0.978, 0.429, 2.412, -1.239, -1.603, -0.181, -0.521, 1.914, -2.182, 0.125, 1.685, 0.003, -0.387, -2.581, -1.024, 0.334, -0.145, 0.94, 0.164, -0.064, -1.564, -0.711, 1.154, -0.131, -0.378, 1.853, -0.029, -0.734, -0.282, 0.984, 1.165, 1.86, -0.993, 0.799, 0.154, 1.172, -0.298, 0.225, 0.089, -1.197, -0.36, 0.271, -2.952, -0.236)"
   },
   {
     "objectID": "4-Foundations_Statistical_Inference/7-Introducing_T-Distribution.html",
@@ -2350,5 +2350,271 @@
     "title": "Semester Project",
     "section": "Check Test Requirements",
     "text": "Check Test Requirements"
+  },
+  {
+    "objectID": "AA_One_and_Two_Sample_Inference.html",
+    "href": "AA_One_and_Two_Sample_Inference.html",
+    "title": "One- and Two-sample Statistical Inference",
+    "section": "",
+    "text": "This activity is designed to provide opportunities for practicing one- and two-sample hypothesis tests and confidence intervals.\nFrom context in the background information, you should be able determine what statistical test is appropriate and what the null and alternative hypotheses should be.\nFor each problem:\n\nCarefully read the background information\n\nDefine the null and alternative hypotheses\n\nPerform the relevant statistical test in R\n\nCheck the test requirements\n\nConstruct and interpret the confidence interval\n\nNOTE: If not stated, use \\(\\alpha=0.05\\). Also, if not specified, you can create graphs using base R or ggplot().\nDon’t forget to load the libraries:\n\nlibrary(tidyverse)\nlibrary(mosaic)\nlibrary(rio)\nlibrary(car)"
+  },
+  {
+    "objectID": "AA_One_and_Two_Sample_Inference.html#test-requirements",
+    "href": "AA_One_and_Two_Sample_Inference.html#test-requirements",
+    "title": "One- and Two-sample Statistical Inference",
+    "section": "Test Requirements",
+    "text": "Test Requirements\nCheck the test requirements for this hypothesis test:\nQUESTION: What are the test requirements, and are they satisfied?\nANSWER:"
+  },
+  {
+    "objectID": "AA_One_and_Two_Sample_Inference.html#confidence-interval",
+    "href": "AA_One_and_Two_Sample_Inference.html#confidence-interval",
+    "title": "One- and Two-sample Statistical Inference",
+    "section": "Confidence Interval",
+    "text": "Confidence Interval\nCalculate a 90% confidence interval for the population average sodium in the cans.\nQUESTION: Interpret the confidence interval in context of the research question.\nANSWER:"
+  },
+  {
+    "objectID": "AA_One_and_Two_Sample_Inference.html#summarize-the-data",
+    "href": "AA_One_and_Two_Sample_Inference.html#summarize-the-data",
+    "title": "One- and Two-sample Statistical Inference",
+    "section": "Summarize the Data",
+    "text": "Summarize the Data\nCreate a table of summary statistics comparing cholesterol levels for each treatment group:\nQUESTION: What is the difference between the sample averages of cholesterol between the 2 groups?\nANSWER:\nUse ggplot() to create a side-by-side boxplot of the cholesterol levels of each treatment group:"
+  },
+  {
+    "objectID": "AA_One_and_Two_Sample_Inference.html#hypothesis-test",
+    "href": "AA_One_and_Two_Sample_Inference.html#hypothesis-test",
+    "title": "One- and Two-sample Statistical Inference",
+    "section": "Hypothesis Test",
+    "text": "Hypothesis Test\nPerform the appropriate statistical test:\nQUESTION: What is the P-value?\nANSWER:\nQUESTION: State your conclusion in context of the research question.\nASNWER:\n\nTest Requirements\nCheck the test requirements for this hypothesis test:\nQUESTION: What are the test requirements, and are they satisfied?\nANSWER:"
+  },
+  {
+    "objectID": "AA_One_and_Two_Sample_Inference.html#confidence-interval-1",
+    "href": "AA_One_and_Two_Sample_Inference.html#confidence-interval-1",
+    "title": "One- and Two-sample Statistical Inference",
+    "section": "Confidence Interval",
+    "text": "Confidence Interval\nCalculate a 95% confidence interval for the difference between the mean cholesterol levels:\nQUESTION: Interpret the confidence interval in context of the research question.\nANSWER:"
+  },
+  {
+    "objectID": "AA_One_and_Two_Sample_Inference.html#summarize-the-data-1",
+    "href": "AA_One_and_Two_Sample_Inference.html#summarize-the-data-1",
+    "title": "One- and Two-sample Statistical Inference",
+    "section": "Summarize the Data",
+    "text": "Summarize the Data\nCreate histograms for before and after weights separately:\nCreate a histogram of the differences (after-before):\nQUESTION: What is the average difference between after and before weights?\nANSWER:"
+  },
+  {
+    "objectID": "AA_One_and_Two_Sample_Inference.html#hypothesis-test-1",
+    "href": "AA_One_and_Two_Sample_Inference.html#hypothesis-test-1",
+    "title": "One- and Two-sample Statistical Inference",
+    "section": "Hypothesis Test",
+    "text": "Hypothesis Test\nPerform the appropriate statistical test:\nQUESTION: What is the P-value?\nANSWER:\nQUESTION: State your conclusion in context of the research question.\nASNWER:\n\nTest Requirements\nCheck the test requirements for this hypothesis test:\nQUESTION: What are the test requirements, and are they satisfied?\nANSWER:"
+  },
+  {
+    "objectID": "AA_One_and_Two_Sample_Inference.html#confidence-interval-2",
+    "href": "AA_One_and_Two_Sample_Inference.html#confidence-interval-2",
+    "title": "One- and Two-sample Statistical Inference",
+    "section": "Confidence Interval",
+    "text": "Confidence Interval\nCalculate a 95% confidence interval for the mean difference between before and after weights:\nQUESTION: Interpret the confidence interval in context of the research question.\nANSWER:"
+  },
+  {
+    "objectID": "AA_One_and_Two_Sample_Inference.html#data-summarization",
+    "href": "AA_One_and_Two_Sample_Inference.html#data-summarization",
+    "title": "One- and Two-sample Statistical Inference",
+    "section": "Data Summarization",
+    "text": "Data Summarization\nQUESTION: What is your sample proportion of units that pass quality control, \\(\\hat{p}\\):\nANSWER:"
+  },
+  {
+    "objectID": "AA_One_and_Two_Sample_Inference.html#hypothesis-test-2",
+    "href": "AA_One_and_Two_Sample_Inference.html#hypothesis-test-2",
+    "title": "One- and Two-sample Statistical Inference",
+    "section": "Hypothesis Test",
+    "text": "Hypothesis Test\nPerform the appropriate statistical test:\nQUESTION: What is the P-value?\nANSWER:\nQUESTION: State your conclusion in context of the research question.\nASNWER:\nQUESTION: What are the test requirements for a 1-sample proportion hypothesis test, and are they satisfied?\nANSWER:"
+  },
+  {
+    "objectID": "AA_One_and_Two_Sample_Inference.html#confidence-interval-3",
+    "href": "AA_One_and_Two_Sample_Inference.html#confidence-interval-3",
+    "title": "One- and Two-sample Statistical Inference",
+    "section": "Confidence Interval",
+    "text": "Confidence Interval\nCreate a 99% confidence interval for the true proportion of items that pass inspection.\nQUESTION: Interpret the confidence interval in context of the research question.\nANSWER:\nQUESTION: What are the test requirements for a 1-sample proportion confidence interval, and are they satisfied?\nANSWER:"
+  },
+  {
+    "objectID": "AA_Descriptive_Statistics.html",
+    "href": "AA_Descriptive_Statistics.html",
+    "title": "Application Activity: Descriptive Statistics",
+    "section": "",
+    "text": "In this activity, you will practice everything we’ve covered up to this point including:\n\nReviewing a dataset\n\nDetermining response and explanatory variables\n\nDetermining data types (quantitative, categorical)\n\nCreating descriptive statistics:\n\nQuantitative data (one and two variables)\n\nSummary statistics for a single variable (favstats(data$y))\nHistogram for one variable (histogram(data$y))\n\nSummary statistics for multiple groups (favstats(data$y ~ data$x))\n\nSide-by-side boxplots (boxplot(data$y ~ data$x))\n\nScatter plots, continuous \\(x\\) (plot(data$y ~ data$x))\n\nCorrelation between 2 quantitative variables (correlation coefficient, \\(r\\))\n\n\nCategorical data (one and two variables)\n\nIdentifying levels of a categorical variable (unique())\n\nFrequency and proportion tables (table(data$variable), prop.table(table(data$variable)))\n\nUnivariate, SORTED bar charts (barplot(SORTED_table_name))\n\nContingency tables (table(row, column))\n\nRow/Column Percents (prop.table(tbl_name, margin = ))\n\nBivariate bar charts (barplot(table_name, beside=TRUE, col=c(2,3,4,...)))\n\n\n\nWe will be using data collected about students in 2 Portuguese schools including their final grade. The goal of the research was to see what variables impact final grades."
+  },
+  {
+    "objectID": "AA_Descriptive_Statistics.html#response-variable-univariate-summary-statistics",
+    "href": "AA_Descriptive_Statistics.html#response-variable-univariate-summary-statistics",
+    "title": "Application Activity: Descriptive Statistics",
+    "section": "Response Variable: Univariate Summary Statistics",
+    "text": "Response Variable: Univariate Summary Statistics\nQUESTION: What is the primary response variable? (What are we trying to predict?)\nANSWER:\nQUESTION: Create a table of summary statistics for the primary response variable:\n\nfavstats()\n\nError in `favstats()`:\n! argument \"x\" is missing, with no default\n\n\nQUESTION: What is the mean grade?\nANSWER:\nQUESTION: What is the median grade?\nANSWER:\nQUESTION: What is the Standard Deviation of grades?\nANSWER:\nQUESTION: Interpret in words what the standard deviation means?\nANSWER:\nQUESTION: What is the 75th percentile of grades?\nANSWER:\nQUESTION: Interpret in words what the 75th percentile means?\nANSWER:\nCreate a histogram of the primary response variable:\nQUESTION: What is the basic shape of the distribution?\nANSWER:\nQUESTION: What anomalies, if any, do you notice?\nANSWER:"
+  },
+  {
+    "objectID": "AA_Descriptive_Statistics.html#explanatory-variables",
+    "href": "AA_Descriptive_Statistics.html#explanatory-variables",
+    "title": "Application Activity: Descriptive Statistics",
+    "section": "Explanatory Variables",
+    "text": "Explanatory Variables\nList 5 potential explanatory variables and whether or not they are quantitative or categorical:\n\n\n\n\n\n\n\n\nRelationship Between 2 Variables\n\nCategorical X\nCreate a table of summary statistics for final grade for each level of sex:\n\nfavstats(~)\n\nError in parse(text = input): &lt;text&gt;:2:11: unexpected ')'\n1: \n2: favstats(~)\n             ^\n\n\nQUESTION: What is the mean grade for females?\nANSWER:\nCreate a side-by-side boxplot of final grades for each level of father’s job (Fjob):\nQUESTION: Which level of Fjob tends to have students with the highest final grades?\nANSWER:\nCreate a side-by-side boxplot of final grades for each level of mother’s job (Mjob):\nQUESTION: Which level of Mjob appears to have students with the highest final grades?\nANSWER:\n\n\nQuantitative X\nCreate a scatter plot looking at the relationship between mid-term grade (G2) and final grade (G3):\nQUESTION: Does the relationship appear roughly linear?\nANSWER:\nQUESTION: What anomalies, if any, do you notice?\nANSWER:\nQUESTION: Based on the scatter plot, guess the correlation coefficient:\nANSWER:\nCalculate the correlation coefficient, r:"
+  },
+  {
+    "objectID": "AA_Descriptive_Statistics.html#categorical-descriptive-statistics",
+    "href": "AA_Descriptive_Statistics.html#categorical-descriptive-statistics",
+    "title": "Application Activity: Descriptive Statistics",
+    "section": "Categorical Descriptive Statistics",
+    "text": "Categorical Descriptive Statistics\nQUESTION: What are the levels of mother’s profession?\n\nunique()\n\nError in `unique.default()`:\n! argument \"x\" is missing, with no default\n\n\nCreate a proportion table table for sex\nQUESTION: What percent of respondents are female?\nANSWER:\nCreate a SORTED bar chart of the counts of reasons students chose their school (reason):\nQUESTION: Which reason appears to be the most popular?\nANSWER:\nCreate and name a contingency table looking at the relationship between gender and whether or not they are in a romantic relationship.\nThen calculate the proportion of each gender in a romantic relationship (should sum to 1 for each gender):\nQUESTION: What percent of female respondents are in a romantic relationship?\nANSWER:\nQUESTION: What percent of male respondents are in a romantic relationship?\nANSWER:\nCreate a bar chart that groups bars based on sex on the x-axis and adds a legend for the colors of the bars by romantic.\n\n# Start by naming the table\ntbl_relationship &lt;- table()\n\nError in `table()`:\n! nothing to tabulate\n\n# Then create the chart:"
+  },
+  {
+    "objectID": "8-AA_Data_Wrang_and_Viz.html",
+    "href": "8-AA_Data_Wrang_and_Viz.html",
+    "title": "Data Wrangling - Application Activity",
+    "section": "",
+    "text": "The Big 5 personality test is the most widely accepted tool for modelling personality in academic psychology. It is based on decades of statistical analysis of personality descriptions across languages and cultures. The big 5 traits are:\n\nOpenness\nConscientiousness\nExtroversion\nAgreeableness\nNeuroticism\n\nBrother Cannon collected personality data on students for the past several semesters, including a few metrics that may be associated with personality traits.\nNOTE: Scores for personality traits are given in percentiles relative to the general population.\nIn this activity, you will practice the process for approaching a dataset outlined in class:\n\nLoad the data and libraries\nExplore the data and generate hypotheses\nPrepare the data for analysis\nPerform the appropriate analysis\n\nData preparation will include using the filter() function. For now, analysis means creating good visualizations that tells a story using ggplot() and base R."
+  },
+  {
+    "objectID": "8-AA_Data_Wrang_and_Viz.html#extroversion",
+    "href": "8-AA_Data_Wrang_and_Viz.html#extroversion",
+    "title": "Data Wrangling - Application Activity",
+    "section": "Extroversion",
+    "text": "Extroversion\nQUESTION: Create a new dataset called extro that includes only columns for birth month and extroversion scores. Make sure it only has values that are real.\nHINT: Extroversion is measured in percentiles, and you should already know what the months of the year are.\n\nextro &lt;- \n\nError in parse(text = input): &lt;text&gt;:4:0: unexpected end of input\n2: extro &lt;- \n3:   \n  ^\n\n\nQUESTION: USE GGPLOT to create a side-by-side boxplot of Extroversion scores for all birth months.\n\nggplot()\n\n\n\n\n\n\n\n\nQUESTION: Based on the boxplot, which month appears to be the least extroverted? Explain your reasoning.\nANSWER:\nQUESTION: Based on the boxplot, which month appears to be the most extroverted? Explain your reasoning.\nANSWER:"
+  },
+  {
+    "objectID": "8-AA_Data_Wrang_and_Viz.html#neuroticism",
+    "href": "8-AA_Data_Wrang_and_Viz.html#neuroticism",
+    "title": "Data Wrangling - Application Activity",
+    "section": "Neuroticism",
+    "text": "Neuroticism\nQUESTION: Create a dataset called neuro that includes only the Section and Neuroticism columns:\n\nneuro &lt;- \n\nError in parse(text = input): &lt;text&gt;:4:0: unexpected end of input\n2: neuro &lt;- \n3:   \n  ^\n\n\nQUESTION: USE GGPLOT to create a side-by-side boxplot comparing Neuroticism for all the different sections:\nQUESTION: Based on the boxplot, which section appears to be the lowest in trait neuroticism? Explain your reasoning.\nANSWER:"
+  },
+  {
+    "objectID": "3-Data_Wrangling_Visualization/5b-Mutate_Practice.html",
+    "href": "3-Data_Wrangling_Visualization/5b-Mutate_Practice.html",
+    "title": "Level up your Tidy-ness",
+    "section": "",
+    "text": "The questions relate to the High School survey used in other examples.\n\n# Load libraries and data\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nsurvey &lt;- import('https://github.com/byuistats/Math221D_Cannon/raw/master/Data/HighSchoolSeniors_subset.csv') %&gt;% tibble()"
+  },
+  {
+    "objectID": "3-Data_Wrangling_Visualization/5b-Mutate_Practice.html#putting-it-altogether",
+    "href": "3-Data_Wrangling_Visualization/5b-Mutate_Practice.html#putting-it-altogether",
+    "title": "Level up your Tidy-ness",
+    "section": "Putting it altogether",
+    "text": "Putting it altogether\n\nLet’s practice using a factor variable in addition to the other wrangling skills you have learned so far.\n\nWe are interested in comparing hours spent in outdoor activities for students by their favorite seasons.\n- Start by removing outliers in the `Outdoor_Activities_Hours` variable. \n- Then create side-by-side boxplots `Outdoor_Activities_Hours` by `Favorite_Season`, but we want the seasons listed in a specific order: Winter, Spring, Summer, Fall. \n    \n    - To do this, create a new variable (or overwrite the Favorite_Season variable) that converts the `Favorite_Season` character variable into a factor variable with the specified order for its levels. Then create the boxplot.\n    \n\n# Your Code:"
+  },
+  {
+    "objectID": "3-Data_Wrangling_Visualization/1b-GGPlot_Intro_Practice.html",
+    "href": "3-Data_Wrangling_Visualization/1b-GGPlot_Intro_Practice.html",
+    "title": "ggplot2: Descriptive Statistics Practice",
+    "section": "",
+    "text": "In this activity, you will practice the plots from the previous Application Activity, but this time creating each plot using ggplot instead of the method you originally learned.\nWe will be using data collected about students in 2 Portuguese schools including their final grade. The goal of the research was to see what variables impact final grades."
+  },
+  {
+    "objectID": "3-Data_Wrangling_Visualization/1b-GGPlot_Intro_Practice.html#univariate-plot-quantitative-response-variable",
+    "href": "3-Data_Wrangling_Visualization/1b-GGPlot_Intro_Practice.html#univariate-plot-quantitative-response-variable",
+    "title": "ggplot2: Descriptive Statistics Practice",
+    "section": "Univariate Plot: Quantitative Response Variable",
+    "text": "Univariate Plot: Quantitative Response Variable\nCreate a histogram of column G3, which contains their final grade."
+  },
+  {
+    "objectID": "3-Data_Wrangling_Visualization/1b-GGPlot_Intro_Practice.html#bivariate-plot-quantitative-response-and-categorical-explanatory-variable",
+    "href": "3-Data_Wrangling_Visualization/1b-GGPlot_Intro_Practice.html#bivariate-plot-quantitative-response-and-categorical-explanatory-variable",
+    "title": "ggplot2: Descriptive Statistics Practice",
+    "section": "Bivariate Plot: Quantitative Response and Categorical Explanatory Variable",
+    "text": "Bivariate Plot: Quantitative Response and Categorical Explanatory Variable\nCreate a side-by-side boxplot of final grades (G3) for each level of father’s job (Fjob). Ensure the plot is properly labeled, titled, and looks nice. Use non-cryptic titles and labels (i.e. ‘Final grade’ instead of ‘G3’).\nSimilarly, create a side-by-side boxplot of final grades for each level of mother’s job (Mjob). Give each box a different color. Can you add any other embellishments?"
+  },
+  {
+    "objectID": "3-Data_Wrangling_Visualization/1b-GGPlot_Intro_Practice.html#bivariate-plot-quantitative-response-and-quantitative-explanatory-variable",
+    "href": "3-Data_Wrangling_Visualization/1b-GGPlot_Intro_Practice.html#bivariate-plot-quantitative-response-and-quantitative-explanatory-variable",
+    "title": "ggplot2: Descriptive Statistics Practice",
+    "section": "Bivariate Plot: Quantitative Response and Quantitative Explanatory Variable",
+    "text": "Bivariate Plot: Quantitative Response and Quantitative Explanatory Variable\nCreate a scatter plot looking at the relationship between mid-term grade (G2) and final grade (G3). Use non-cryptic titles and labels."
+  },
+  {
+    "objectID": "3-Data_Wrangling_Visualization/1b-GGPlot_Intro_Practice.html#univariate-plot-categorical-response",
+    "href": "3-Data_Wrangling_Visualization/1b-GGPlot_Intro_Practice.html#univariate-plot-categorical-response",
+    "title": "ggplot2: Descriptive Statistics Practice",
+    "section": "Univariate Plot: Categorical Response",
+    "text": "Univariate Plot: Categorical Response\nCreate a SORTED bar chart of the counts of reasons students chose their school (reason). Use non-cryptic titles and labels. Make sure the plot looks nice."
+  },
+  {
+    "objectID": "3-Data_Wrangling_Visualization/1b-GGPlot_Intro_Practice.html#bivariate-plot-categorical-response-and-categorical-explanatory-variable",
+    "href": "3-Data_Wrangling_Visualization/1b-GGPlot_Intro_Practice.html#bivariate-plot-categorical-response-and-categorical-explanatory-variable",
+    "title": "ggplot2: Descriptive Statistics Practice",
+    "section": "Bivariate Plot: Categorical Response and Categorical Explanatory Variable",
+    "text": "Bivariate Plot: Categorical Response and Categorical Explanatory Variable\nCreate a bar chart that groups bars based on sex on the x-axis and adds a legend for the colors of the bars by romantic. Ensure the plot looks nice, with good labels and a title stating the main take away of the plot."
+  },
+  {
+    "objectID": "2-Descriptive_Statistics/5b-Univariate_Categorical_Data_Summaries_Practice.html",
+    "href": "2-Descriptive_Statistics/5b-Univariate_Categorical_Data_Summaries_Practice.html",
+    "title": "Practice: Summarizing Categorical Data for 1 Variable",
+    "section": "",
+    "text": "Reasons why patients visit a chiropractor vary and may depend on where you live.\nUse the chiropractic dataset to practice summarizing categorical data.\n\n\n\nlibrary(tidyverse)\nlibrary(mosaic)\nlibrary(rio)\nlibrary(car)\n\nchiropractic &lt;- import('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/chiropractic_data.csv')"
+  },
+  {
+    "objectID": "2-Descriptive_Statistics/5b-Univariate_Categorical_Data_Summaries_Practice.html#load-the-libraries-and-data",
+    "href": "2-Descriptive_Statistics/5b-Univariate_Categorical_Data_Summaries_Practice.html#load-the-libraries-and-data",
+    "title": "Practice: Summarizing Categorical Data for 1 Variable",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(mosaic)\nlibrary(rio)\nlibrary(car)\n\nchiropractic &lt;- import('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/chiropractic_data.csv')"
+  },
+  {
+    "objectID": "3-Data_Wrangling_Visualization/4b_Select_Filter_Practice.html",
+    "href": "3-Data_Wrangling_Visualization/4b_Select_Filter_Practice.html",
+    "title": "Level up your Tidy-ness",
+    "section": "",
+    "text": "Practicing Filter and Select statements\nThe questions relate to the High School survey used in other examples.\n\n# Load libraries and data\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nsurvey &lt;- import('https://github.com/byuistats/Math221D_Cannon/raw/master/Data/HighSchoolSeniors_subset.csv') %&gt;% tibble()\n\n\n\nTelepaths, Gender and Sleep\nSuppose we want to see who gets more sleep on non-school nights, males or females whose chosen superpower would be telepathy. Also, create a column that is the ratio of sleep hours on non-school nights to 8. This calculates the percent of recommended sleep on non-school nights.\n\nCreate a dataset that includes columns Gender, Superpower, Sleep_Hours_Non-Schoolnight. Then filter the dataset to include only those who choose Telepathy as their superpower.\n\n\nsurvey |&gt; \n\nError in parse(text = input): &lt;text&gt;:3:0: unexpected end of input\n1: survey |&gt; \n2: \n  ^\n\n\n\nHow many rows and columns does the resulting dataset have?\n\n\n\nVegetarians and Height\n\nHow many vegetarians say meat is their favorite food?\n\nHINT: This can be done with a single filter statement\n\n# Your Code:\n\n\nStart with the full dataset then filter out any major outliers in heights.\n\n\n# Your Code:\n\n\nExplain how you decided where the cut-off for too tall and too short should be. What were the thresholds you chose? How many rows were in the resulting dataset?\nUse ggplot to create a side-by-side boxplot of heights for vegetarians vs. non-vegetarians.\n\n\n# Your Code:\n\n\nFrom the boxplot, would you argue one group tends to be taller/shorter than the other? Justify your answer.\nCreate a dataset that:\n\nIncludes only columns for Favourite_physical_activity and Reaction_time\nIncludes only students whose favorite physical activity is Walking/Hiking, Basketball, Swimming, Soccer\nFilters Reaction Times to be less than 1 second\n\n\n\n# Your Code:\n\n\nNow use the dataset created in the previous question to create a side-by-side boxplot for the reaction times comparing favourite physical activity\n\n\n# Your Code:\n\n\nWhich physical activity group has the quickest reaction time?"
+  },
+  {
+    "objectID": "4-Foundations_Statistical_Inference/1b-Probability_Practice.html",
+    "href": "4-Foundations_Statistical_Inference/1b-Probability_Practice.html",
+    "title": "Homework: Foundations of Probability",
+    "section": "",
+    "text": "Please answer the following 10 questions using the concepts of discrete and continuous probability distributions. Show your work for any calculations.\n\n\nQuestion 1: The Range of Probability What is the quantifiable range of values that a probability can take? Briefly explain what the two extreme values (the endpoints of the range) represent regarding the likelihood of an event.\nQuestion 2: Defining Discrete Events Define what a “discrete event” is. Provide two original examples of discrete events that were not used in the reading (e.g., do not use flipping a coin, rolling a die, or counting students).\nQuestion 3: Calculating Probabilities You are playing your favorite board game. It is close to the end and is your turn. If you roll a 5 or 6 on a 6-sided die you will win the game. If you roll anything else, your oponent will win. What is the probability you win the game on your next roll?\nQuestion 4: Soda Preferences and the Complement Rule A survey of 288 students found the following preferences for sparkling drinks: * 144 prefer Twisted Sugar * 58 prefer Fizz Rizz * 68 prefer Pick Me Up The remaining students are classified as having a “distaste” for these beverages. Calculate the probability of randomly selecting a student who prefers Fizz Rizz.\n\n\n\nQuestion 5: The Probability of an Exact Point In a continuous probability distribution, why is the probability of a specific, exact event (such as a person being exactly 72.1254 inches tall) considered to be zero?\nQuestion 6: Major League Baseball Probabilities You work at a doctor’s office where data about patients eosinophil count per microliter of blood is collected. There are 133 patients with an eosinohil count over 1,500, out of a total of 446 patients. Calculate the probability of randomly selecting a patient whose eosinophil count exceeds 1,500.\nQuestion 7: Total Probability Rule What is the fundamental rule regarding the total area under the curve for any continuous probability distribution?"
+  },
+  {
+    "objectID": "4-Foundations_Statistical_Inference/1b-Probability_Practice.html#introduction-to-probability-homework",
+    "href": "4-Foundations_Statistical_Inference/1b-Probability_Practice.html#introduction-to-probability-homework",
+    "title": "Homework: Foundations of Probability",
+    "section": "",
+    "text": "Please answer the following 10 questions using the concepts of discrete and continuous probability distributions. Show your work for any calculations.\n\n\nQuestion 1: The Range of Probability What is the quantifiable range of values that a probability can take? Briefly explain what the two extreme values (the endpoints of the range) represent regarding the likelihood of an event.\nQuestion 2: Defining Discrete Events Define what a “discrete event” is. Provide two original examples of discrete events that were not used in the reading (e.g., do not use flipping a coin, rolling a die, or counting students).\nQuestion 3: Calculating Probabilities You are playing your favorite board game. It is close to the end and is your turn. If you roll a 5 or 6 on a 6-sided die you will win the game. If you roll anything else, your oponent will win. What is the probability you win the game on your next roll?\nQuestion 4: Soda Preferences and the Complement Rule A survey of 288 students found the following preferences for sparkling drinks: * 144 prefer Twisted Sugar * 58 prefer Fizz Rizz * 68 prefer Pick Me Up The remaining students are classified as having a “distaste” for these beverages. Calculate the probability of randomly selecting a student who prefers Fizz Rizz.\n\n\n\nQuestion 5: The Probability of an Exact Point In a continuous probability distribution, why is the probability of a specific, exact event (such as a person being exactly 72.1254 inches tall) considered to be zero?\nQuestion 6: Major League Baseball Probabilities You work at a doctor’s office where data about patients eosinophil count per microliter of blood is collected. There are 133 patients with an eosinohil count over 1,500, out of a total of 446 patients. Calculate the probability of randomly selecting a patient whose eosinophil count exceeds 1,500.\nQuestion 7: Total Probability Rule What is the fundamental rule regarding the total area under the curve for any continuous probability distribution?"
+  },
+  {
+    "objectID": "4-Foundations_Statistical_Inference/7a-Confidence_Intervals_z_Practice.html",
+    "href": "4-Foundations_Statistical_Inference/7a-Confidence_Intervals_z_Practice.html",
+    "title": "Confidence Interval for a Single Mean (when sigma is known)",
+    "section": "",
+    "text": "Question 1\nWhich of the following serves as the point estimator for the unknown population mean \\(\\mu\\)?\n\n\\(\\sigma\\)\n\\(s\\)\n\\(\\bar{x}\\)\n\\(n\\)\n\n\n\nQuestion 2\nA researcher wants to estimate the mean birth weight of neonates in a specific region. The population standard deviation is known to be \\(\\sigma = 0.5\\) kg. A random sample of \\(n = 100\\) babies yields a sample mean of \\(\\bar{x} = 3.1\\) kg. Calculate the Margin of Error (\\(m\\)) for a 95% confidence interval.\n\n\nQuestion 3\nUsing the information from previous question, calculate the lower and upper bounds of the 95% confidence interval. Format your answer as: (Lower Limit, Upper Limit).\n\n\nQuestion 4\nIf sample size \\(n\\) increases, what happens to the width of the confidence interval? (keeping the confidence level the same)\n\n\nQuestion 5\nSuppose you calculate a 90% confidence interval for the average height of a plant species to be (12.4cm, 15.6cm). Write a full sentence to interpret this confidence interval.\n\n\nQuestion 6\nWhat is the margin of error for the confidence interval given in the previous question?\n\n\nQuestion 7\nAn environmentalist is testing the algae levels in a large lake in her region. It is known that \\(\\sigma = 15000\\) algae cells/mL. A sample of \\(n = 36\\) sites are tested, resulting in a sample mean of \\(\\bar{x} = 45000\\) algae cells/mL. Calculate a 99% confidence interval for the true mean algae levels (in cells/mL).\n\n\nQuestion 8\nWhat is the critical value \\(z^*\\) for a 90% confidence interval? What does \\(z^*\\) represent?\n\n\nQuestion 9\nConsider the margin of error formula:\n\\[m = z^* \\cdot \\frac{\\sigma}{\\sqrt{n}}\\]\nYou are planning a study of the average grocery bill (per week) of a BYU-Idaho student. You want to be 95% confident that your sample estimate (\\(\\bar{x}\\)) is within \\(m = \\$5\\) of the true mean. I know from previous studies that \\(\\sigma = \\$15\\). How many students do I need to sample?"
+  },
+  {
+    "objectID": "AA-One_Sample_ttests_and_CIs.html",
+    "href": "AA-One_Sample_ttests_and_CIs.html",
+    "title": "Don’t Take it Personally",
+    "section": "",
+    "text": "Introduction\nIn this activity, you will execute statistical hypothesis tests and generate confidence intervals for each of the Big 5 personality traits using data collected from a random sample of Stat 225 Math 221 students.\nQuestion: What is the population of this analysis?\nAnswer:\nFor each personality trait, include:\n\nA statement of the null and alternative hypotheses and why you chose the alternative you did.\nChoose alpha, $= $\nCheck that you can trust the normality of the mean (n &gt; 30 or qqPlot(respons_variable))\nRun the one-sample t-test and state your conclusion (technical and contextual explanation)\nCalculate a \\(1-\\alpha\\) level confidence interval and describe in words what it means in context of the research question\n\nRecall that we can use favstats() to get summary statistics, boxplot() and histogram() to get visualizations, and the t.test() function to get hypothesis tests and confidence intervals. Be sure to label your plots’ axes and include a title.\n\n# Load Libraries\n\nlibrary(tidyverse)\nlibrary(mosaic)\nlibrary(rio)\nlibrary(car)\n\n\n# Load Data\nbig5 &lt;- import('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/All_class_combined_personality_data.csv')\n\n\n\nExtroversion\nState your null and alternative hypotheses:\n\\[H_o:  \\mu = 50\\]\n\\[H_a:  \\mu &gt; 50\\]\n\\[\\alpha = 0.025 \\]\n1. Create a table of summary statistics:\n\n# Extroversion\n\nfavstats(big5$Extroversion) %&gt;% knitr::kable()\n\n\n\n\n\nmin\nQ1\nmedian\nQ3\nmax\nmean\nsd\nn\nmissing\n\n\n\n\n\n1\n42\n58\n73\n100\n56.98267\n21.09599\n404\n1\n\n\n\n\n\n\nCreate a histogram of Extroversion:\n\n\n### I'm making a single variable called \"extrov\" that drops the missing values.  You can do the same thing with the other traits to make analysis a little easier\nextrov &lt;- na.omit(big5$Extroversion) \n\nhistogram(extrov, xlab = \"Extroversion\", main = \"Histogram of Extroversion Percentiles\")\n\n\n\n\n\n\n\n\n\nPerform the one-sample t.test:\n\n\n# For Hypothesis Test:\nt.test(extrov, mu = 50, alternative = \"greater\")\n\n\n    One Sample t-test\n\ndata:  extrov\nt = 6.6529, df = 403, p-value = 4.697e-11\nalternative hypothesis: true mean is greater than 50\n95 percent confidence interval:\n 55.25232      Inf\nsample estimates:\nmean of x \n 56.98267 \n\n\n\nExplain your conclusion:\n\nTechnical: Because the p-value is less than \\(\\alpha\\), I reject the null hypothesis.\nContextual: I have sufficient evidence to suggest that Stat 225 students are, on average, more Extroverted than the general population.\n\nCreate a Confidence Interval for the average extroversion of Stat 225 students:\n\n\n# For a Confidence Interval:\nt.test(extrov, conf.level = 1-.025)$conf.int\n\n[1] 54.62135 59.34399\nattr(,\"conf.level\")\n[1] 0.975\n\n\n\nExplain your confidence interval:\n\nI am 97.5% confident that the true average extroversion of Stat 225 students is somewhere between the 54.62 and 59.34 percentiles.\n\n\nAgreeableness\nState your null and alternative hypotheses. For example, do you think Stat 225 students are more, less, or just different than the general population?\n\\[H_o:  \\mu  \\]\n\\[H_a:  \\mu \\]\n\\[\\alpha =  \\]\n1. Create a table of summary statistics for Agreeableness:\n\nCreate a histogram of Agreeableness:\n\n\nPerform the one-sample t.test:\n\n\nExplain your conclusion:\n\nTechnical:\nContextual:\n\nCreate a Confidence Interval for the average agreeableness of Stat 225 students:\n\n\n# For a Confidence Interval:\nt.test()$conf.int\n\nError in `t_test.default()`:\n! argument \"x\" is missing, with no default\n\n\n\nExplain your confidence interval:\n\n\n\nOpenness\nState your null and alternative hypotheses:\n\\[H_o:  \\mu \\]\n\\[H_a:  \\mu \\]\n\\[\\alpha = \\]\n\nCreate a table of summary statistics for Openness:\n\n\nCreate a histogram of Openness:\n\n\nPerform the one-sample t.test:\n\n\nExplain your conclusion:\n\nTechnical:\nContextual:\n\nCreate a Confidence Interval for the average openness of Stat 225 students:\n\n\n# For a Confidence Interval:\nt.test()$conf.int\n\nError in `t_test.default()`:\n! argument \"x\" is missing, with no default\n\n\n\nExplain your confidence interval:\n\n\n\nNeuroticism\nState your null and alternative hypotheses:\n\\[H_o:  \\mu \\]\n\\[H_a:  \\mu \\]\n\\[\\alpha =  \\]\n1. Create a table of summary statistics for Neuroticism:\n\nCreate a histogram of Neuroticism:\n\n\nPerform the one-sample t.test:\n\n\nExplain your conclusion:\n\nTechnical:\nContextual:\n\nCreate a Confidence Interval for the average neuroticism of Stat 225 students:\n\n\n# For a Confidence Interval:\nt.test()$conf.int\n\nError in `t_test.default()`:\n! argument \"x\" is missing, with no default\n\n\n\nExplain your confidence interval:\n\n\n\nConscientiousness\nState your null and alternative hypotheses:\n\\[H_o:  \\mu \\]\n\\[H_a:  \\mu \\]\n\\[\\alpha = \\]\n1. Create a table of summary statistics:\n\nCreate a histogram of Conscientiousness:\n\n\nPerform the one-sample t.test:\n\n\nExplain your conclusion:\n\nTechnical:\nContextual:\n\nCreate a Confidence Interval for the average conscientiousness of Stat 225 students:\n\n\n# For a Confidence Interval:\nt.test()$conf.int\n\nError in `t_test.default()`:\n! argument \"x\" is missing, with no default\n\n\n\nExplain your confidence interval:"
+  },
+  {
+    "objectID": "AA_Descriptive_Statistics_NEW.html",
+    "href": "AA_Descriptive_Statistics_NEW.html",
+    "title": "Application Activity: Descriptive Statistics",
+    "section": "",
+    "text": "In this activity, you will practice everything we’ve covered up to this point including:\n\nReviewing a dataset\n\nDetermining response and explanatory variables\n\nDetermining data types (quantitative, categorical)\n\nCreating descriptive statistics:\n\nQuantitative data (one and two variables)\n\nSummary statistics for a single variable (favstats(data$y))\nHistogram for one variable (histogram(data$y))\n\nSummary statistics for multiple groups (favstats(data$y ~ data$x))\n\nSide-by-side boxplots (boxplot(data$y ~ data$x))\n\nScatter plots, continuous \\(x\\) (plot(data$y ~ data$x))\n\nCorrelation between 2 quantitative variables (correlation coefficient, \\(r\\))\n\n\nCategorical data (one and two variables)\n\nIdentifying levels of a categorical variable (unique())\n\nFrequency and proportion tables (table(data$variable), prop.table(table(data$variable)))\n\nUnivariate, SORTED bar plots (barplot(SORTED_table_name))\n\nContingency tables (table(row, column))\n\nRow/Column Percents (prop.table(tbl_name, margin = ))\n\nBivariate bar plots (barplot(table_name, beside=TRUE, col=c(2,3,4,...)))"
+  },
+  {
+    "objectID": "AA_Descriptive_Statistics_NEW.html#categorical-x",
+    "href": "AA_Descriptive_Statistics_NEW.html#categorical-x",
+    "title": "Application Activity: Descriptive Statistics",
+    "section": "Categorical X",
+    "text": "Categorical X\nQUESTION 13: Create a table of summary statistics for final grade for each level of sex:\nANSWER 13:\n\nfavstats(~)\n\nError in parse(text = input): &lt;text&gt;:2:11: unexpected ')'\n1: \n2: favstats(~)\n             ^\n\n\nQUESTION 14: What is the mean grade for females?\nANSWER 14:\nQUESTION 15: Create a side-by-side boxplot of final grades for each level of father’s job (Fjob): ANSWER 15:\nQUESTION 16: Which level of Fjob tends to have students with the highest final grades?\nANSWER 16:\nQUESTION 17: Create a side-by-side boxplot of final grades for each level of mother’s job (Mjob): ANSWER 17:\nQUESTION 18: Which level of Mjob appears to have students with the highest final grades?\nANSWER 18:"
+  },
+  {
+    "objectID": "AA_Descriptive_Statistics_NEW.html#quantitative-x",
+    "href": "AA_Descriptive_Statistics_NEW.html#quantitative-x",
+    "title": "Application Activity: Descriptive Statistics",
+    "section": "Quantitative X",
+    "text": "Quantitative X\nQUESTION 19: Create a scatter plot looking at the relationship between mid-term grade (G2) and final grade (G3): ANSWER 19:\nQUESTION 20: Does the relationship appear roughly linear?\nANSWER 20:\nQUESTION 21: What anomalies, if any, do you notice?\nANSWER 21:\nQUESTION 22: Based on the scatter plot, guess the correlation coefficient:\nANSWER 22:\nQUESTION 23: Calculate the correlation coefficient, r: ANSWER 23:"
+  },
+  {
+    "objectID": "AA_Descriptive_Statistics_NEW.html#categorical-descriptive-statistics",
+    "href": "AA_Descriptive_Statistics_NEW.html#categorical-descriptive-statistics",
+    "title": "Application Activity: Descriptive Statistics",
+    "section": "Categorical Descriptive Statistics",
+    "text": "Categorical Descriptive Statistics\nQUESTION 24: What are the levels of mother’s profession? ANSWER 24:\n\nunique()\n\nError in `unique.default()`:\n! argument \"x\" is missing, with no default\n\n\nQUESTION 25: Create a proportion table for sex ANSWER 25:\nQUESTION 26: What proportion of respondents are female?\nANSWER 26:\nQUESTION 27: Create a SORTED bar plot of the counts of reasons students chose their school (reason):\nANSWER 27:\nQUESTION 28: Which reason appears to be the most popular?\nANSWER 28:\nQUESTION 29: Calculate the proportion of each gender in a romantic relationship (should sum to 1 for each gender):\nANSWER 29:\nQUESTION 30: What percent of female respondents are in a romantic relationship?\nANSWER 30:\nQUESTION 31: What percent of male respondents are in a romantic relationship?\nANSWER 31:\nQUESTION 32: Create a bar plot of counts (not proportions) that groups bars based on sex on the x-axis and adds a legend for the colors of the bars by romantic. ANSWER 32:\n\n# Start by naming the table\ntbl_relationship &lt;- table()\n\nError in `table()`:\n! nothing to tabulate\n\n# Then create the chart:"
   }
 ]
