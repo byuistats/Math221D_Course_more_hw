@@ -82,7 +82,7 @@ Create a scatter plot looking at the relationship between mid-term grade (G2) an
 
 
 
-Create a *SORTED* bar chart of the counts of reasons students chose their school (`reason`). Use non-cryptic titles and labels. Make sure the plot looks nice.
+Create a bar chart of the counts of reasons students chose their school (`reason`). Use non-cryptic titles and labels. Make sure the plot looks nice.
 
 ```{r}
 
