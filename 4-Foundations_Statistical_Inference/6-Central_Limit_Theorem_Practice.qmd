@@ -59,18 +59,18 @@ __Answer__:
 
 A particular casino caters to tourists. Tourists arrive on buses in groups of 60. You work for the tour company's marketing department. Since the winnings of individual tourists are so right skewed, you would like to advertise the mean winnings per __busload__ of tourists on your brochure.  The population mean winnings for individual tourists is $\mu= \$500$ and the population standard deviation is $\sigma= \$1,200$. 
 
-__Question__: On average, what are mean winnings of a busload of tourists ($\mu_{\bar{x}}$)? 
+__Question__: On average, what are mean winnings per busload of tourists ($\mu_{\bar{x}}$)? 
 __Answer__:  
 
-__Question__: What is the standard deviation of average winnings for a busload of tourists (i.e. $\sigma_{\bar{x}}$)?  
+__Question__: What is the standard deviation of mean winnings per busload of tourists (i.e. $\sigma_{\bar{x}}$)?  
 __Answer__:  
 
-__Question__:  What is the *shape* of the distribution of average winnings for busloads of tourists? Why?
+__Question__:  What is the *shape* of the distribution of mean winnings per busload of tourists? Why?
 __Answer__:  
 
 __Question__: Which of these statements is correct:
-a. 68% of tour buses will have passengers that average winnings between \$345 and \$655.
-b. 68% of tour buses will have passengers that average winnings between \$-700 and \$1700.
+a. 68% of tour buses will have mean winnings between \$345 and \$655.
+b. 68% of tour buses will have means winnings between \$-700 and \$1700.
 
 __Question__: Is your marketing decision to advertise the average winnings of a busload of tourists (as opposed to individual winnings) a good idea? Why or why not?
 
